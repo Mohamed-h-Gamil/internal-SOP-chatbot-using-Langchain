@@ -1,0 +1,6 @@
+langchain[huggingface]
+langchain[google-genai]
+langchain_docling
+langchain_huggingface
+langchain_community
+chromadb
