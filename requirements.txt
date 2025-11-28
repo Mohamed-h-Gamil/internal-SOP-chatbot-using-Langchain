@@ -8,3 +8,4 @@ hf_xet
 langchain_community
 chromadb
 dotenv
+chainlit
