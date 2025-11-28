@@ -97,3 +97,13 @@ python sop_chat_cli.py
   → Explains refund or replacement policy.
 
 ---
+
+## 🌐 Images from the web app
+
+<img width="2838" height="1548" alt="Screenshot 2025-11-28 032635" src="https://github.com/user-attachments/assets/eea76ee8-f9d4-4a5c-b40e-d6a847ca244f" />
+
+<img width="1210" height="1406" alt="Screenshot 2025-11-28 033035" src="https://github.com/user-attachments/assets/06e77efb-85fc-4e61-9d75-063fc4b88203" />
+
+---
+
+
