@@ -2,3 +2,5 @@ test.py
 test2.py
 venv
 .env
+vectordb
+__pycache__

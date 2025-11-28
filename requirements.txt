@@ -1,6 +1,10 @@
 langchain[huggingface]
 langchain[google-genai]
 langchain_docling
+langchain-chroma
 langchain_huggingface
+sentence-transformers
+hf_xet
 langchain_community
 chromadb
+dotenv
