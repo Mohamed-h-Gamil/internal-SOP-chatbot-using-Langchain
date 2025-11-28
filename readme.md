@@ -18,17 +18,16 @@ The system utilizes Retrieval-Augmented Generation (RAG) to:
 
 ## 🚀 Key Features
 
-- **Context-Aware Answers**: Strictly grounded in *maids_cc_sop_comprehensive.txt*.
-- **Source Citations**: UI highlights the exact document section retrieved.
+- **Context-Aware Answers**: Strictly grounded in *data/SOP.pdf*.
 - **Dual Interface**: CLI for testing + Chainlit Web UI for end users.
-- **Fast Retrieval**: Uses FAISS for lightweight, local vector search.
+- **Fast Retrieval**: Uses Chromadb for lightweight, local vector search.
 
 ---
 
 ## 🛠️ Tech Stack
 
 - **Framework**: LangChain  
-- **LLM & Embeddings**: Google Gemini 2.5 Flash  
+- **LLM & Embeddings**: Google Gemini 2.5 Flash lite
 - **Vector Store**: Chromadb
 - **Interface**: Chainlit  
 - **Language**: Python 3.10+
@@ -40,8 +39,8 @@ The system utilizes Retrieval-Augmented Generation (RAG) to:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/internal-sop-chatbot.git
-cd internal-sop-chatbot
+git clone https://github.com/Mohamed-h-Gamil/internal-SOP-chatbot-using-Langchain
+cd internal-SOP-chatbot-using-Langchain
 ```
 
 ### 2. Install Dependencies
@@ -50,15 +49,18 @@ cd internal-sop-chatbot
 pip install -r requirements.txt
 ```
 
-*Make sure you have:*  
-`langchain`, `langchain-google-genai`, `chromadb`, `chainlit`
-
 ### 3. Configure Credentials
 
-You need a Google Gemini API Key:
+You need a Huggingface and Google Gemini API Key stored in a .env file or:
 
 ```bash
 export GOOGLE_API_KEY="your_api_key_here"
+```
+
+### 4. Prepare the Vector Database
+
+```bash
+python data_preprocessing.py
 ```
 
 ---
@@ -70,7 +72,7 @@ export GOOGLE_API_KEY="your_api_key_here"
 Launch the web application:
 
 ```bash
-chainlit run chat_ui.py -w
+chainlit run sop_chat_chainlit.py -w
 ```
 
 ### **Option 2: CLI Tool**
@@ -78,7 +80,7 @@ chainlit run chat_ui.py -w
 Run the terminal version:
 
 ```bash
-python sop_chatbot.py
+python sop_chat_cli.py
 ```
 
 ---
